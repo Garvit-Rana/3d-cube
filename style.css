@@ -1,0 +1,81 @@
+@keyframes move{
+   from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+  
+}
+#zero{
+  animation:move 4s infinite linear;
+  margin-left:181px;
+  margin-top:180px;
+  height:200px;
+  width: 200px;
+  position:relative;
+  border:1px solid;
+  transform-style:preserve-3d;
+  transition:all 1s ease-in-out;
+  background-color:red;
+perspective:2000px;
+}
+#zero{
+  transform:rotateY(-50deg) rotateX(-35deg);
+}
+#first{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:green;
+  transition:1s ease-in-out;
+}
+#first{
+  transform:rotateX(90deg) translateZ(-100px) translateY(100px);
+}
+#third{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:white;
+  transition: 1s ease-in;
+}
+#third
+{
+  transform:rotateX(90deg) translateY(100px) translateZ(100px);
+  
+}
+#four{
+   width:100%;
+  height:100%;
+  position:absolute;
+  background-color:blue;
+  transition: 1s ease-in;
+  
+}
+#four{
+  transform:rotateY(90deg) translateX(-100px) translateZ(100px);
+}
+#five{
+   width:100%;
+  height:100%;
+  position:absolute;
+  background-color:orange;
+  transition: 1s ease-in;
+}
+#five{
+  transform:rotateY(90deg) translateX(-100px) translateZ(-100px);
+}
+#six{
+    width:100%;
+  height:100%;
+  position:absolute;
+  background-color:violet;
+  transition: 1s ease-in;
+  
+}
+#six{
+transform:rotateZ(90deg) translateZ(200px);
+}
+
